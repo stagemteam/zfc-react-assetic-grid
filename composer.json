@@ -21,12 +21,12 @@
   },
   "autoload": {
     "psr-4": {
-      "Stagem\\ZfcRactAsseticGrid\\": "src/"
+      "Stagem\\Stagem\\ZfcReactAsseticGrid\\": "src/"
     }
   },
   "extra": {
     "zf": {
-      "component": "Stagem\\ZfcRactAsseticGrid"
+      "component": "Stagem\\ZfcReactAsseticGrid"
     }
   }
 }
