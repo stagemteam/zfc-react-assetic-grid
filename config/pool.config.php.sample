@@ -1,0 +1,36 @@
+<?php
+/**
+ * The MIT License (MIT)
+ * Copyright (c) 2018 Stagem Team
+ * This source file is subject to The MIT License (OSL 3.0)
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * https://opensource.org/licenses/MIT
+ *
+ * @category Stagem
+ * @package Stagem_Pool
+ * @author Serhii Popov <popow.serhii@gmail.com>
+ * @license https://opensource.org/licenses/MIT The MIT License (MIT)
+ */
+ return [
+     'system' => [
+         'default' => [
+             'pool' => [
+                 'general' => [
+                     'object_manager' => 'Doctrine\ORM\EntityManager',
+                      'pool_class' => 'Application\Entity\User',
+
+                      // Now, you can pass only id value in url.
+                      // If you need another value than you must fetch real pool in SysConfig::EditAction based on url parameter.
+                      #'pool_property' => 'email',
+                      #'pool_default' => 'admin@example.com',
+                      'pool_property' => 'id',
+                      'pool_default' => '1',
+                      'url_parameter' => 'user',
+                      #'header_parameter' => 'X-User',
+                      'strategy' => \Stagem\ZfcPool\Service\Strategy\ParamStrategy::class,
+                 ],
+             ],
+         ],
+     ],
+ ];
