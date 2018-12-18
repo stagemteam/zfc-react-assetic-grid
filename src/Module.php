@@ -13,7 +13,7 @@
  * @license https://opensource.org/licenses/MIT The MIT License (MIT)
  */
 
-namespace Stagem\ZfcR;
+namespace Stagem\ZfcReactAsseticGrid;
 
 use Zend\Mvc\MvcEvent;
 use Zend\Http\Request as HttpRequest;
